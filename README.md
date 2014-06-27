@@ -1,6 +1,6 @@
 pintube-login
 =============
-![alt tag](https://raw.githubusercontent.com/taehoko/pintube/master/bitmap/pintube_demo.gif)
+![alt tag](https://raw.githubusercontent.com/taehoko/pintube-login/master/pintube_login_demo.gif)
 
 Q. How many hours did it take to complete?
 
