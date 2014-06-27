@@ -13,7 +13,6 @@
 #import "AddViewController.h"
 #import "MessagesViewController.h"
 #import "MeViewController.h"
-#import "MessagesTableViewController.h"
 
 @interface LoginViewController ()
 
@@ -24,10 +23,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (nonatomic) BOOL elementsUpState;
-- (IBAction)onEmailEditingBegin:(id)sender;
-- (IBAction)onPasswordEditingBegin:(id)sender;
-- (IBAction)onEmailEditingChanged:(id)sender;
-- (IBAction)onPasswordEditingChanged:(id)sender;
+
+- (IBAction)onEditing:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UIView *loginButtonView;
 @property (weak, nonatomic) IBOutlet UILabel *loginButtonLabel;
@@ -36,9 +33,8 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *loadingSpinner;
 - (IBAction)onLoginButtonUp:(id)sender;
 
-
-
-
+- (void)willShowKeyboard:(NSNotification *)notification;
+- (void)willHideKeyboard:(NSNotification *)notification;
 
 @end
 
@@ -49,6 +45,10 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        
+        // Register the methods for the keyboard hide/show events
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willShowKeyboard:) name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willHideKeyboard:) name:UIKeyboardWillHideNotification object:nil];
     }
     return self;
 }
@@ -61,8 +61,7 @@
     self.navigationController.navigationBar.hidden = YES;
     
     self.loginButtonLabel.textColor = [UIColor colorWithRed:255.0 green:255.0 blue:255.0 alpha:0.5];
-    
-    self.elementsUpState = NO;
+
     self.loginButton.enabled = NO;
     
 }
@@ -73,32 +72,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)onEmailEditingBegin:(id)sender {
-    if (self.elementsUpState == NO) {
-        [self moveElementsUp];
-    }
-}
-
-- (IBAction)onPasswordEditingBegin:(id)sender {
-    if (self.elementsUpState == NO) {
-        [self moveElementsUp];
-    }
-}
-
-- (IBAction)onEmailEditingChanged:(id)sender {
-    [self preCheckLoginInfo];
-}
-
-- (IBAction)onPasswordEditingChanged:(id)sender {
+- (IBAction)onEditing:(id)sender {
     [self preCheckLoginInfo];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [self.emailTextField resignFirstResponder];
     [self.passwordTextField resignFirstResponder];
-    if (self.elementsUpState == YES) {
-        [self moveElementsDown];
-    }
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -108,32 +88,59 @@
     return NO;
 }
 
-- (void)moveElementsUp {
-    self.elementsUpState = YES;
+- (void)willShowKeyboard:(NSNotification *)notification {
+    NSDictionary *userInfo = [notification userInfo];
     
-    [UIView animateWithDuration:0.2 animations:^{
-        self.logoImageView.frame = CGRectMake(self.logoImageView.frame.origin.x + 14, self.logoImageView.frame.origin.y - 40, self.logoImageView.frame.size.width * 0.6, self.logoImageView.frame.size.height * 0.6);
-        
-        self.textView.center = CGPointMake(self.textView.center.x, self.textView.center.y - 80);
-        
-        self.loginButtonView.center = CGPointMake(self.loginButtonView.center.x, self.loginButtonView.center.y - 80);
-        
-        self.linkView.center = CGPointMake(self.linkView.center.x, self.linkView.center.y - 190);
-    }];
+    // Get the keyboard height and width from the notification
+    // Size varies depending on OS, language, orientation
+    CGSize kbSize = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    NSLog(@"Height: %f Width: %f", kbSize.height, kbSize.width);
+    
+    // Get the animation duration and curve from the notification
+    NSNumber *durationValue = userInfo[UIKeyboardAnimationDurationUserInfoKey];
+    NSTimeInterval animationDuration = durationValue.doubleValue;
+    NSNumber *curveValue = userInfo[UIKeyboardAnimationCurveUserInfoKey];
+    UIViewAnimationCurve animationCurve = curveValue.intValue;
+    
+    // Move the view with the same duration and animation curve so that it will match with the keyboard animation
+    [UIView animateWithDuration:animationDuration
+                          delay:0.0
+                        options:(animationCurve << 16)
+                     animations:^{
+                         self.logoImageView.frame = CGRectMake(self.logoImageView.frame.origin.x + 14, self.logoImageView.frame.origin.y - 40, self.logoImageView.frame.size.width * 0.6, self.logoImageView.frame.size.height * 0.6);
+                         
+                         self.textView.center = CGPointMake(self.textView.center.x, self.textView.center.y - 80);
+                         
+                         self.loginButtonView.center = CGPointMake(self.loginButtonView.center.x, self.loginButtonView.center.y - 80);
+                         
+                         self.linkView.center = CGPointMake(self.linkView.center.x, self.linkView.center.y - 190);
+                     }
+                     completion:nil];
 }
 
-- (void)moveElementsDown {
-    self.elementsUpState = NO;
+- (void)willHideKeyboard:(NSNotification *)notification {
+    NSDictionary *userInfo = [notification userInfo];
     
-    [UIView animateWithDuration:0.2 animations:^{
-        self.logoImageView.frame = CGRectMake(124, 110, 71, 72);
-        
-        self.textView.center = CGPointMake(self.textView.center.x, self.textView.center.y + 80);
-        
-        self.loginButtonView.center = CGPointMake(self.loginButtonView.center.x, self.loginButtonView.center.y + 80);
-        
-        self.linkView.center = CGPointMake(self.linkView.center.x, self.linkView.center.y + 190);
-    }];
+    // Get the animation duration and curve from the notification
+    NSNumber *durationValue = userInfo[UIKeyboardAnimationDurationUserInfoKey];
+    NSTimeInterval animationDuration = durationValue.doubleValue;
+    NSNumber *curveValue = userInfo[UIKeyboardAnimationCurveUserInfoKey];
+    UIViewAnimationCurve animationCurve = curveValue.intValue;
+    
+    // Move the view with the same duration and animation curve so that it will match with the keyboard animation
+    [UIView animateWithDuration:animationDuration
+                          delay:0.0
+                        options:(animationCurve << 16)
+                     animations:^{
+                         self.logoImageView.frame = CGRectMake(124, 110, 71, 72);
+                         
+                         self.textView.center = CGPointMake(self.textView.center.x, self.textView.center.y + 80);
+                         
+                         self.loginButtonView.center = CGPointMake(self.loginButtonView.center.x, self.loginButtonView.center.y + 80);
+                         
+                         self.linkView.center = CGPointMake(self.linkView.center.x, self.linkView.center.y + 190);
+                     }
+                     completion:nil];
 }
 
 - (void)preCheckLoginInfo {
@@ -230,4 +237,5 @@
     tabBarController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
     [self presentViewController:tabBarController animated:YES completion:nil];
 }
+
 @end

@@ -10,8 +10,6 @@
 		6A31A1F0195CF4A300165E75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A31A1EF195CF4A300165E75 /* Images.xcassets */; };
 		6A31A1F4195DFBF500165E75 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31A1F2195DFBF500165E75 /* PostViewController.m */; };
 		6A31A1F5195DFBF500165E75 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A31A1F3195DFBF500165E75 /* PostViewController.xib */; };
-		6A31A1FE195E13FA00165E75 /* MessagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31A1FC195E13FA00165E75 /* MessagesTableViewController.m */; };
-		6A31A1FF195E13FA00165E75 /* MessagesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A31A1FD195E13FA00165E75 /* MessagesTableViewController.xib */; };
 		6A932657195A3CD300DE48A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A932656195A3CD300DE48A0 /* Foundation.framework */; };
 		6A932659195A3CD300DE48A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A932658195A3CD300DE48A0 /* CoreGraphics.framework */; };
 		6A93265B195A3CD300DE48A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A93265A195A3CD300DE48A0 /* UIKit.framework */; };
@@ -52,9 +50,6 @@
 		6A31A1F1195DFBF500165E75 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
 		6A31A1F2195DFBF500165E75 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 		6A31A1F3195DFBF500165E75 /* PostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
-		6A31A1FB195E13FA00165E75 /* MessagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesTableViewController.h; sourceTree = "<group>"; };
-		6A31A1FC195E13FA00165E75 /* MessagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesTableViewController.m; sourceTree = "<group>"; };
-		6A31A1FD195E13FA00165E75 /* MessagesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesTableViewController.xib; sourceTree = "<group>"; };
 		6A932653195A3CD300DE48A0 /* pintube-login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pintube-login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A932656195A3CD300DE48A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A932658195A3CD300DE48A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -206,9 +201,6 @@
 				6AE487B3195CC6CC00AC3CCE /* MessagesViewController.h */,
 				6AE487B4195CC6CC00AC3CCE /* MessagesViewController.m */,
 				6AE487B5195CC6CC00AC3CCE /* MessagesViewController.xib */,
-				6A31A1FB195E13FA00165E75 /* MessagesTableViewController.h */,
-				6A31A1FC195E13FA00165E75 /* MessagesTableViewController.m */,
-				6A31A1FD195E13FA00165E75 /* MessagesTableViewController.xib */,
 				6AE487B8195CC6D800AC3CCE /* MeViewController.h */,
 				6AE487B9195CC6D800AC3CCE /* MeViewController.m */,
 				6AE487BA195CC6D800AC3CCE /* MeViewController.xib */,
@@ -296,7 +288,6 @@
 				6A31A1F5195DFBF500165E75 /* PostViewController.xib in Resources */,
 				6A932661195A3CD300DE48A0 /* InfoPlist.strings in Resources */,
 				6AE487B7195CC6CC00AC3CCE /* MessagesViewController.xib in Resources */,
-				6A31A1FF195E13FA00165E75 /* MessagesTableViewController.xib in Resources */,
 				6A932689195A3CE800DE48A0 /* LoginViewController.xib in Resources */,
 				6AE487AD195CC6B800AC3CCE /* SearchViewController.xib in Resources */,
 				6AE487BC195CC6D800AC3CCE /* MeViewController.xib in Resources */,
@@ -324,7 +315,6 @@
 				6AE487B1195CC6C000AC3CCE /* AddViewController.m in Sources */,
 				6AE487AC195CC6B800AC3CCE /* SearchViewController.m in Sources */,
 				6A932688195A3CE800DE48A0 /* LoginViewController.m in Sources */,
-				6A31A1FE195E13FA00165E75 /* MessagesTableViewController.m in Sources */,
 				6A31A1F4195DFBF500165E75 /* PostViewController.m in Sources */,
 				6AE487A7195CC6A400AC3CCE /* MainViewController.m in Sources */,
 				6AE487BB195CC6D800AC3CCE /* MeViewController.m in Sources */,

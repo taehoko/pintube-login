@@ -46,8 +46,7 @@
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                             <connections>
-                                <action selector="onEmailEditingBegin:" destination="-1" eventType="editingDidBegin" id="DTN-YL-S7E"/>
-                                <action selector="onEmailEditingChanged:" destination="-1" eventType="editingChanged" id="aRP-kZ-RJH"/>
+                                <action selector="onEditing:" destination="-1" eventType="editingChanged" id="nCV-eA-fEI"/>
                             </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pdr-RE-q56">
@@ -56,8 +55,7 @@
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                             <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             <connections>
-                                <action selector="onPasswordEditingBegin:" destination="-1" eventType="editingDidBegin" id="yat-GO-wsF"/>
-                                <action selector="onPasswordEditingChanged:" destination="-1" eventType="editingChanged" id="5ue-ZI-VCZ"/>
+                                <action selector="onEditing:" destination="-1" eventType="editingChanged" id="kMn-Q2-yIw"/>
                             </connections>
                         </textField>
                     </subviews>
