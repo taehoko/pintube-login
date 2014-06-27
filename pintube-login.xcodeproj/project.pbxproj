@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A31A1F0195CF4A300165E75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A31A1EF195CF4A300165E75 /* Images.xcassets */; };
+		6A31A1F4195DFBF500165E75 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31A1F2195DFBF500165E75 /* PostViewController.m */; };
+		6A31A1F5195DFBF500165E75 /* PostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A31A1F3195DFBF500165E75 /* PostViewController.xib */; };
+		6A31A1FE195E13FA00165E75 /* MessagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A31A1FC195E13FA00165E75 /* MessagesTableViewController.m */; };
+		6A31A1FF195E13FA00165E75 /* MessagesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A31A1FD195E13FA00165E75 /* MessagesTableViewController.xib */; };
 		6A932657195A3CD300DE48A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A932656195A3CD300DE48A0 /* Foundation.framework */; };
 		6A932659195A3CD300DE48A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A932658195A3CD300DE48A0 /* CoreGraphics.framework */; };
 		6A93265B195A3CD300DE48A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A93265A195A3CD300DE48A0 /* UIKit.framework */; };
 		6A932661195A3CD300DE48A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A93265F195A3CD300DE48A0 /* InfoPlist.strings */; };
 		6A932663195A3CD300DE48A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A932662195A3CD300DE48A0 /* main.m */; };
 		6A932667195A3CD300DE48A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A932666195A3CD300DE48A0 /* AppDelegate.m */; };
-		6A932669195A3CD300DE48A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A932668195A3CD300DE48A0 /* Images.xcassets */; };
 		6A932670195A3CD300DE48A0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A93266F195A3CD300DE48A0 /* XCTest.framework */; };
 		6A932671195A3CD300DE48A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A932656195A3CD300DE48A0 /* Foundation.framework */; };
 		6A932672195A3CD300DE48A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A93265A195A3CD300DE48A0 /* UIKit.framework */; };
 		6A93267A195A3CD300DE48A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A932678195A3CD300DE48A0 /* InfoPlist.strings */; };
 		6A93267C195A3CD300DE48A0 /* pintube_loginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A93267B195A3CD300DE48A0 /* pintube_loginTests.m */; };
+		6A932688195A3CE800DE48A0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A932686195A3CE800DE48A0 /* LoginViewController.m */; };
+		6A932689195A3CE800DE48A0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A932687195A3CE800DE48A0 /* LoginViewController.xib */; };
+		6AE487A7195CC6A400AC3CCE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE487A5195CC6A400AC3CCE /* MainViewController.m */; };
+		6AE487A8195CC6A400AC3CCE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE487A6195CC6A400AC3CCE /* MainViewController.xib */; };
+		6AE487AC195CC6B800AC3CCE /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE487AA195CC6B800AC3CCE /* SearchViewController.m */; };
+		6AE487AD195CC6B800AC3CCE /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE487AB195CC6B800AC3CCE /* SearchViewController.xib */; };
+		6AE487B1195CC6C000AC3CCE /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE487AF195CC6C000AC3CCE /* AddViewController.m */; };
+		6AE487B2195CC6C000AC3CCE /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE487B0195CC6C000AC3CCE /* AddViewController.xib */; };
+		6AE487B6195CC6CC00AC3CCE /* MessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE487B4195CC6CC00AC3CCE /* MessagesViewController.m */; };
+		6AE487B7195CC6CC00AC3CCE /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE487B5195CC6CC00AC3CCE /* MessagesViewController.xib */; };
+		6AE487BB195CC6D800AC3CCE /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE487B9195CC6D800AC3CCE /* MeViewController.m */; };
+		6AE487BC195CC6D800AC3CCE /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AE487BA195CC6D800AC3CCE /* MeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A31A1EF195CF4A300165E75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6A31A1F1195DFBF500165E75 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		6A31A1F2195DFBF500165E75 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		6A31A1F3195DFBF500165E75 /* PostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostViewController.xib; sourceTree = "<group>"; };
+		6A31A1FB195E13FA00165E75 /* MessagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesTableViewController.h; sourceTree = "<group>"; };
+		6A31A1FC195E13FA00165E75 /* MessagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesTableViewController.m; sourceTree = "<group>"; };
+		6A31A1FD195E13FA00165E75 /* MessagesTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesTableViewController.xib; sourceTree = "<group>"; };
 		6A932653195A3CD300DE48A0 /* pintube-login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pintube-login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A932656195A3CD300DE48A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A932658195A3CD300DE48A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -42,12 +65,29 @@
 		6A932664195A3CD300DE48A0 /* pintube-login-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pintube-login-Prefix.pch"; sourceTree = "<group>"; };
 		6A932665195A3CD300DE48A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A932666195A3CD300DE48A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6A932668195A3CD300DE48A0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6A93266E195A3CD300DE48A0 /* pintube-loginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pintube-loginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A93266F195A3CD300DE48A0 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6A932677195A3CD300DE48A0 /* pintube-loginTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pintube-loginTests-Info.plist"; sourceTree = "<group>"; };
 		6A932679195A3CD300DE48A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A93267B195A3CD300DE48A0 /* pintube_loginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pintube_loginTests.m; sourceTree = "<group>"; };
+		6A932685195A3CE800DE48A0 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6A932686195A3CE800DE48A0 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		6A932687195A3CE800DE48A0 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		6AE487A4195CC6A300AC3CCE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6AE487A5195CC6A400AC3CCE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6AE487A6195CC6A400AC3CCE /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		6AE487A9195CC6B800AC3CCE /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		6AE487AA195CC6B800AC3CCE /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		6AE487AB195CC6B800AC3CCE /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		6AE487AE195CC6C000AC3CCE /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		6AE487AF195CC6C000AC3CCE /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		6AE487B0195CC6C000AC3CCE /* AddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		6AE487B3195CC6CC00AC3CCE /* MessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesViewController.h; sourceTree = "<group>"; };
+		6AE487B4195CC6CC00AC3CCE /* MessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesViewController.m; sourceTree = "<group>"; };
+		6AE487B5195CC6CC00AC3CCE /* MessagesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
+		6AE487B8195CC6D800AC3CCE /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		6AE487B9195CC6D800AC3CCE /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		6AE487BA195CC6D800AC3CCE /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +147,10 @@
 		6A93265C195A3CD300DE48A0 /* pintube-login */ = {
 			isa = PBXGroup;
 			children = (
+				6A31A1EF195CF4A300165E75 /* Images.xcassets */,
+				6A93268A195A3CF400DE48A0 /* ViewControllers */,
 				6A932665195A3CD300DE48A0 /* AppDelegate.h */,
 				6A932666195A3CD300DE48A0 /* AppDelegate.m */,
-				6A932668195A3CD300DE48A0 /* Images.xcassets */,
 				6A93265D195A3CD300DE48A0 /* Supporting Files */,
 			);
 			path = "pintube-login";
@@ -142,6 +183,37 @@
 				6A932678195A3CD300DE48A0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A93268A195A3CF400DE48A0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A932685195A3CE800DE48A0 /* LoginViewController.h */,
+				6A932686195A3CE800DE48A0 /* LoginViewController.m */,
+				6A932687195A3CE800DE48A0 /* LoginViewController.xib */,
+				6AE487A4195CC6A300AC3CCE /* MainViewController.h */,
+				6AE487A5195CC6A400AC3CCE /* MainViewController.m */,
+				6AE487A6195CC6A400AC3CCE /* MainViewController.xib */,
+				6A31A1F1195DFBF500165E75 /* PostViewController.h */,
+				6A31A1F2195DFBF500165E75 /* PostViewController.m */,
+				6A31A1F3195DFBF500165E75 /* PostViewController.xib */,
+				6AE487A9195CC6B800AC3CCE /* SearchViewController.h */,
+				6AE487AA195CC6B800AC3CCE /* SearchViewController.m */,
+				6AE487AB195CC6B800AC3CCE /* SearchViewController.xib */,
+				6AE487AE195CC6C000AC3CCE /* AddViewController.h */,
+				6AE487AF195CC6C000AC3CCE /* AddViewController.m */,
+				6AE487B0195CC6C000AC3CCE /* AddViewController.xib */,
+				6AE487B3195CC6CC00AC3CCE /* MessagesViewController.h */,
+				6AE487B4195CC6CC00AC3CCE /* MessagesViewController.m */,
+				6AE487B5195CC6CC00AC3CCE /* MessagesViewController.xib */,
+				6A31A1FB195E13FA00165E75 /* MessagesTableViewController.h */,
+				6A31A1FC195E13FA00165E75 /* MessagesTableViewController.m */,
+				6A31A1FD195E13FA00165E75 /* MessagesTableViewController.xib */,
+				6AE487B8195CC6D800AC3CCE /* MeViewController.h */,
+				6AE487B9195CC6D800AC3CCE /* MeViewController.m */,
+				6AE487BA195CC6D800AC3CCE /* MeViewController.xib */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +291,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE487B2195CC6C000AC3CCE /* AddViewController.xib in Resources */,
+				6A31A1F0195CF4A300165E75 /* Images.xcassets in Resources */,
+				6A31A1F5195DFBF500165E75 /* PostViewController.xib in Resources */,
 				6A932661195A3CD300DE48A0 /* InfoPlist.strings in Resources */,
-				6A932669195A3CD300DE48A0 /* Images.xcassets in Resources */,
+				6AE487B7195CC6CC00AC3CCE /* MessagesViewController.xib in Resources */,
+				6A31A1FF195E13FA00165E75 /* MessagesTableViewController.xib in Resources */,
+				6A932689195A3CE800DE48A0 /* LoginViewController.xib in Resources */,
+				6AE487AD195CC6B800AC3CCE /* SearchViewController.xib in Resources */,
+				6AE487BC195CC6D800AC3CCE /* MeViewController.xib in Resources */,
+				6AE487A8195CC6A400AC3CCE /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +321,14 @@
 			files = (
 				6A932667195A3CD300DE48A0 /* AppDelegate.m in Sources */,
 				6A932663195A3CD300DE48A0 /* main.m in Sources */,
+				6AE487B1195CC6C000AC3CCE /* AddViewController.m in Sources */,
+				6AE487AC195CC6B800AC3CCE /* SearchViewController.m in Sources */,
+				6A932688195A3CE800DE48A0 /* LoginViewController.m in Sources */,
+				6A31A1FE195E13FA00165E75 /* MessagesTableViewController.m in Sources */,
+				6A31A1F4195DFBF500165E75 /* PostViewController.m in Sources */,
+				6AE487A7195CC6A400AC3CCE /* MainViewController.m in Sources */,
+				6AE487BB195CC6D800AC3CCE /* MeViewController.m in Sources */,
+				6AE487B6195CC6CC00AC3CCE /* MessagesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +525,7 @@
 				6A932681195A3CD300DE48A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A932682195A3CD300DE48A0 /* Build configuration list for PBXNativeTarget "pintube-loginTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +534,7 @@
 				6A932684195A3CD300DE48A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

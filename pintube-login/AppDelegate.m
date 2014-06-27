@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
+#import "MainViewController.h"
+#import "SearchViewController.h"
+#import "AddViewController.h"
+#import "MessagesViewController.h"
+#import "MeViewController.h"
 
 @implementation AppDelegate
 
@@ -14,6 +20,13 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+
+    // Set the view
+    LoginViewController *vc = [[LoginViewController alloc] init];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController: vc];
+    self.window.rootViewController = nvc;
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
